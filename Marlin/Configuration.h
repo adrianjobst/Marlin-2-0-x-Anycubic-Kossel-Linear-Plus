@@ -449,7 +449,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 0
+#define TEMP_SENSOR_0 998
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -1300,9 +1300,9 @@
 // @section machine
 #if DISABLED(KNUTWURST_TMC)
     // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-    #define INVERT_X_DIR true
-    #define INVERT_Y_DIR true
-    #define INVERT_Z_DIR true
+    #define INVERT_X_DIR false
+    #define INVERT_Y_DIR false
+    #define INVERT_Z_DIR false
 
     // @section extruder
 
