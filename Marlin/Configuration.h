@@ -40,7 +40,7 @@
  **                                                                                       **
  *******************************************************************************************/
 
-//#define KNUTWURST_KOSSEL_PLUS
+#define KNUTWURST_KOSSEL_PLUS
 //#define KNUTWURST_GRAPHIC_LCD
 //#define KNUTWURST_TMC
 //#define KNUTWURST_BLTOUCH
@@ -57,11 +57,12 @@
 // 0 ... no heated bed
 // 1 ... aluminium heated bed with "BuildTak-like" sticker
 // 2 ... ultrabase heated bed
-#if ENABLED(KNUTWURST_KOSSEL_PLUS)
-   #define KNUTWURST_KOSSEL_ENABLE_BED 2
-#else
-   #define KNUTWURST_KOSSEL_ENABLE_BED 0
-#endif
+#define KNUTWURST_KOSSEL_ENABLE_BED 0
+//#if ENABLED(KNUTWURST_KOSSEL_PLUS)
+//   #define KNUTWURST_KOSSEL_ENABLE_BED 2
+//#else
+//   #define KNUTWURST_KOSSEL_ENABLE_BED 0
+//#endif
 
 /**
  * Configuration.h
@@ -170,11 +171,11 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_TRIGORILLA_14
+  #define MOTHERBOARD BOARD_TRIGORILLA_14_11
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Knutwurst's Kossel Delta Printer"
+#define CUSTOM_MACHINE_NAME "Kossel Delta Printer"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -448,7 +449,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 0
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
